@@ -11,18 +11,23 @@ export default function About() {
             ABOUT
           </h2>
           <p className="mt-3 text-base leading-relaxed text-foreground-secondary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam quis nostrud exercitation.
+            Santiago started on stage early, debuting as lead guitarist in
+            Andrew Lloyd Webber&apos;s School of Rock on the West End, playing
+            Zack Mooneyham for eighteen months. From there, things kept
+            moving: ITV&apos;s Saturday Night Takeaway, a set in front of
+            15,000 at Live at Chelsea, and shows scattered across London and
+            Europe.
           </p>
         </div>
 
         {/* Right — Paragraph (desktop only) */}
         <div className="hidden lg:block max-w-md text-right">
           <p className="text-base leading-relaxed text-foreground-secondary">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident sunt in culpa.
+            Now based in Philadelphia, he splits time between BlueShade, a
+            live band playing venues across New York and Philly, and his own
+            solo work layering live guitar over electronic production. In 2024
+            he co-founded Knossos Music. The label exists for the stuff that
+            doesn&apos;t fit anywhere else.
           </p>
         </div>
       </div>
@@ -34,10 +39,10 @@ export default function About() {
       <div className="flex flex-col gap-3 mt-auto lg:mt-0 lg:flex-row lg:justify-between lg:items-end">
         <div className="flex items-baseline justify-between lg:block">
           <p className="text-xl lg:text-6xl font-medium uppercase tracking-tight leading-none text-foreground">
-            50M+
+            7+
           </p>
           <p className="text-[10px] lg:text-xs lg:mt-1 uppercase tracking-widest leading-tight text-foreground-secondary whitespace-nowrap">
-            Total streams
+            Countries
           </p>
         </div>
         <div className="flex items-baseline justify-between lg:block lg:text-center">

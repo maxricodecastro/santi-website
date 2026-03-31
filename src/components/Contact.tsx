@@ -3,20 +3,23 @@
 import { useState } from "react";
 
 const polaroids = [
-  { src: "/Knossos.JPG", alt: "Polaroid 1", rotation: -7 },
-  { src: "/Knossos.JPG", alt: "Polaroid 2", rotation: 3 },
-  { src: "/Knossos.JPG", alt: "Polaroid 3", rotation: -2 },
-  { src: "/Knossos.JPG", alt: "Polaroid 4", rotation: 5 },
-  { src: "/Knossos.JPG", alt: "Polaroid 5", rotation: -4 },
-  { src: "/Knossos.JPG", alt: "Polaroid 6", rotation: 2 },
+  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319369/IMG_0324_bnc6b2.jpg", alt: "Polaroid 1", rotation: -7 },
+  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319281/IMG_0847_zmimfq.jpg", alt: "Polaroid 2", rotation: 3 },
+  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319242/_P1A9944_Original_2_flhcmx.jpg", alt: "Polaroid 3", rotation: -2 },
+  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319369/IMG_0316_fgpenw.jpg", alt: "Polaroid 4", rotation: 5 },
+  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319243/IMG_0863_yrjrxe.jpg", alt: "Polaroid 5", rotation: -4 },
+  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319242/WhatsApp_Image_2026-03-09_at_19.29.59_pufmrm.jpg", alt: "Polaroid 6", rotation: 2 },
+  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319240/WhatsApp_Image_2026-03-09_at_19.31.05_nsj6cx.jpg", alt: "Polaroid 7", rotation: -5 },
+  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319240/IMG_0260_rma2n7.jpg", alt: "Polaroid 8", rotation: 4 },
+  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319240/WhatsApp_Image_2026-03-09_at_19.28.37_tbmmot.jpg", alt: "Polaroid 9", rotation: -3 },
 ];
 
 const links = [
-  { label: "SOUNDCLOUD", href: "#" },
-  { label: "INSTAGRAM", href: "#" },
-  { label: "TIKTOK", href: "#" },
-  { label: "YOUTUBE", href: "#" },
-  { label: "EMAIL", href: "#" },
+  { label: "SOUNDCLOUD", href: "https://soundcloud.com/scerchione?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" },
+  { label: "INSTAGRAM", href: "https://www.instagram.com/santiagocerchione/" },
+  { label: "TIKTOK", href: "https://www.tiktok.com/@santiagocerchione?_r=1&_t=ZN-958Ln33zWC6" },
+  { label: "YOUTUBE", href: "https://www.youtube.com/@Knossosmusic" },
+  { label: "EMAIL", href: "mailto:knossosevents@gmail.com" },
 ];
 
 export default function Contact() {
@@ -27,7 +30,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="relative min-h-[80vh] lg:h-screen overflow-hidden bg-background">
+    <section id="contact" className="relative min-h-[80vh] lg:h-screen overflow-hidden bg-background">
       {/* Section label */}
       <div className="absolute top-8 left-0 right-0 z-10 flex justify-center">
         <span className="text-xs font-medium uppercase tracking-widest leading-none text-foreground-secondary">
@@ -42,6 +45,7 @@ export default function Contact() {
             <a
               key={link.label}
               href={link.href}
+              {...(link.href !== "#" ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className="py-1 lg:py-0 underline-offset-4 decoration-foreground/0 hover:decoration-foreground underline transition-[text-decoration-color] duration-300 ease-out"
             >
               {link.label}
@@ -58,7 +62,7 @@ export default function Contact() {
             return (
               <div
                 key={i}
-                className={`relative -mx-4 lg:-mx-10 cursor-pointer ${i >= 3 ? "hidden lg:block" : ""}`}
+                className={`relative -mx-4 lg:-mx-10 cursor-pointer ${i >= 4 ? "hidden lg:block" : ""}`}
                 style={{
                   transform: `rotate(${p.rotation}deg) translateY(${isHovered ? "-24px" : "0px"})`,
                   zIndex: polaroids.length - Math.abs(i - polaroids.length / 2),

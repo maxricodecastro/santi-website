@@ -13,9 +13,9 @@ export default function Hero() {
     <section className="relative flex flex-col h-svh lg:h-screen overflow-hidden bg-background">
       {/* Top Bar */}
       <div className="absolute inset-x-0 top-0 z-10 flex justify-center gap-6 py-4 text-xs font-medium uppercase tracking-widest text-foreground-secondary lg:justify-start lg:gap-0">
-        <a href="#" className="underline underline-offset-4 hover:text-white transition-colors lg:absolute lg:left-6">WORK</a>
-        <a href="#" className="underline underline-offset-4 hover:text-white transition-colors lg:absolute lg:left-44">CONTACT</a>
-        <a href="#" className="hidden lg:inline underline underline-offset-4 hover:text-white transition-colors lg:absolute lg:right-1/2 lg:mr-8">SOUNDCLOUD</a>
+        <a href="#work" className="underline underline-offset-4 hover:text-white transition-colors lg:absolute lg:left-6">WORK</a>
+        <a href="#contact" className="underline underline-offset-4 hover:text-white transition-colors lg:absolute lg:left-44">CONTACT</a>
+        <a href="https://soundcloud.com/scerchione?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" rel="noopener noreferrer" className="hidden lg:inline underline underline-offset-4 hover:text-white transition-colors lg:absolute lg:right-1/2 lg:mr-8">SOUNDCLOUD</a>
       </div>
 
       {/* Main Hero Content */}
@@ -23,22 +23,21 @@ export default function Hero() {
         {/* Text — top half on mobile (white bg, left-aligned), right column on desktop */}
         <div className="relative z-10 flex flex-col justify-center items-start px-6 pt-16 pb-4 w-full h-1/2 lg:h-auto lg:w-1/2 lg:ml-auto lg:justify-start lg:pl-8 lg:pr-16 lg:pt-8">
           <h1 className="text-3xl lg:text-5xl font-medium uppercase leading-[1.1] tracking-tight text-foreground">
-            YOUR HEADLINE
+            WHERE THE
             <br />
-            GOES RIGHT
+            SIGNAL MEETS
             <br />
-            HERE
+            SOUND
           </h1>
           <div className="mt-3 max-w-md flex flex-col gap-4 text-base leading-relaxed text-foreground-secondary">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam quis nostrud exercitation.
+              Santiago is an Italian, UK-grown, USA-based producer,
+              multi-instrumentalist, and live performer building at the
+              intersection of electronic production and visceral live sound.
             </p>
-            <p className="hidden lg:block">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident sunt in culpa.
+            <p>
+              With over 250 shows in Europe and America, the music speaks —
+              but it hits different in person.
             </p>
           </div>
         </div>
