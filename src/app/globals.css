@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ─── Vercel Design System (Light Mode) ─── */
 
 :root {
