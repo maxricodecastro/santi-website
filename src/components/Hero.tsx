@@ -25,9 +25,9 @@ export default function Hero() {
           <h1 className="text-3xl lg:text-5xl font-medium uppercase leading-[1.1] tracking-tight text-foreground">
             WHERE THE
             <br />
-            SIGNAL MEETS
+            STRING MEETS
             <br />
-            SOUND
+            THE SIGNAL
           </h1>
           <div className="mt-3 max-w-md flex flex-col gap-4 text-base leading-relaxed text-foreground-secondary">
             <p>
@@ -40,6 +40,7 @@ export default function Hero() {
               but it hits different in person.
             </p>
           </div>
+
         </div>
 
         {/* Image — bottom half on mobile, left column on desktop */}

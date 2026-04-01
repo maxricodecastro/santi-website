@@ -190,7 +190,7 @@ export default function Work() {
   const activeLinks = activeAlbum.links || {};
 
   return (
-    <section id="work" className="relative min-h-screen lg:h-screen px-4 lg:px-6 pt-8 pb-8 flex flex-col items-center lg:flex-row lg:items-stretch" style={{ background: "#1a1a1a" }}>
+    <section id="work" className="relative min-h-screen lg:h-screen px-4 lg:px-6 pt-8 pb-8 flex flex-col items-center lg:flex-row lg:items-stretch overflow-hidden" style={{ background: "#1a1a1a" }}>
       {/* Hidden audio element */}
       <audio ref={audioRef} preload="auto" />
 
@@ -215,15 +215,23 @@ export default function Work() {
         </p>
       </div>
 
-      {/* Mobile-only heading */}
-      <h2 className="lg:hidden text-2xl font-medium uppercase tracking-tight text-white text-center mb-6">
-        WORK
-      </h2>
+      {/* Mobile-only heading + paragraph */}
+      <div className="lg:hidden text-center mb-6">
+        <h2 className="text-2xl font-medium uppercase tracking-tight text-white">
+          WORK
+        </h2>
+        <p className="mt-2 text-sm leading-relaxed text-neutral-400 px-4">
+          The records tell part of the story. This is where the rest of it
+          lives — rough cuts, live recordings, and whatever&apos;s being
+          worked on right now. It won&apos;t sound the same next time
+          you&apos;re here.
+        </p>
+      </div>
 
       {/* Right — Featured + shelf */}
-      <div className="w-full lg:w-2/3 flex flex-col items-center lg:flex-row lg:items-center lg:justify-end lg:gap-10 lg:pt-16">
+      <div className="w-full lg:w-2/3 flex flex-col items-center mt-16 lg:mt-0 lg:flex-row lg:items-center lg:justify-end lg:gap-10 lg:pt-16">
         {/* Featured display + controls */}
-        <div className="flex-shrink-0 flex flex-col w-full max-w-[300px] lg:max-w-none lg:w-[420px]">
+        <div className="flex-shrink-0 flex flex-col w-full max-w-[220px] lg:max-w-none lg:w-[420px]">
           {/* Album display */}
           <div className="relative aspect-square">
             {albums.map((album) => (

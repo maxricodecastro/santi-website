@@ -4,17 +4,17 @@ import { useEffect, useRef, useState } from "react";
 import GalleryImage from "./GalleryImage";
 
 const galleryItems: { src: string; label: string; type: "image" | "video" }[] = [
-  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319369/IMG_0324_bnc6b2.jpg", label: "", type: "image" },
-  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319369/IMG_0316_fgpenw.jpg", label: "", type: "image" },
-  { src: "https://res.cloudinary.com/dxv6sw1ce/video/upload/v1774319426/250702_Clip_2_v1_iyvojg.mp4", label: "", type: "video" },
-  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319281/IMG_0847_zmimfq.jpg", label: "", type: "image" },
-  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319243/IMG_0863_yrjrxe.jpg", label: "", type: "image" },
-  { src: "https://res.cloudinary.com/dxv6sw1ce/video/upload/v1774319312/Santi_Clip_1_v1_puuvs8.mp4", label: "", type: "video" },
-  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319242/_P1A9944_Original_2_flhcmx.jpg", label: "", type: "image" },
-  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319242/WhatsApp_Image_2026-03-09_at_19.29.59_pufmrm.jpg", label: "", type: "image" },
-  { src: "https://res.cloudinary.com/dxv6sw1ce/video/upload/v1774319269/CANVAS_GUITAR_SOLO_INSTA_jlsbgz.mp4", label: "", type: "video" },
-  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319240/WhatsApp_Image_2026-03-09_at_19.31.05_nsj6cx.jpg", label: "", type: "image" },
-  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319240/IMG_0260_rma2n7.jpg", label: "", type: "image" },
+  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319369/IMG_0324_bnc6b2.jpg", label: "Live at 'THEATA' London", type: "image" },
+  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319369/IMG_0316_fgpenw.jpg", label: "Live at 'THEATA' London", type: "image" },
+  { src: "https://res.cloudinary.com/dxv6sw1ce/video/upload/v1774319426/250702_Clip_2_v1_iyvojg.mp4", label: "Knossos 'POLIS' @ B London 2025", type: "video" },
+  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319281/IMG_0847_zmimfq.jpg", label: "Live @ How Matcha 2026", type: "image" },
+  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319243/IMG_0863_yrjrxe.jpg", label: "Santiago & Jivan Calderone, Ibiza 2025", type: "image" },
+  { src: "https://res.cloudinary.com/dxv6sw1ce/video/upload/v1774319312/Santi_Clip_1_v1_puuvs8.mp4", label: "Knossos 'APHRODITE' @ Gallery 2025", type: "video" },
+  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319242/_P1A9944_Original_2_flhcmx.jpg", label: "Blueshade @ City Winery 2025", type: "image" },
+  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319242/WhatsApp_Image_2026-03-09_at_19.29.59_pufmrm.jpg", label: "Blueshade @ City Winery 2025", type: "image" },
+  { src: "https://res.cloudinary.com/dxv6sw1ce/video/upload/v1774319269/CANVAS_GUITAR_SOLO_INSTA_jlsbgz.mp4", label: "Canvas Guitar Solo", type: "video" },
+  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319240/WhatsApp_Image_2026-03-09_at_19.31.05_nsj6cx.jpg", label: "Live @ The Bitter End w/ Richie Cannata 2023", type: "image" },
+  { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319240/IMG_0260_rma2n7.jpg", label: "School of Rock the Musical, 2018", type: "image" },
   { src: "https://res.cloudinary.com/dxv6sw1ce/image/upload/v1774319240/WhatsApp_Image_2026-03-09_at_19.28.37_tbmmot.jpg", label: "", type: "image" },
 ];
 

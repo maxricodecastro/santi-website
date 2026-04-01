@@ -76,12 +76,12 @@ export default function GalleryImage({
         <img
           src={src}
           alt={label}
-          className="h-full w-auto object-cover transition-[filter] duration-300 lg:group-hover:blur-sm lg:group-hover:brightness-50"
+          className={`h-full w-auto object-cover transition-[filter] duration-300 ${isHovered ? "blur-sm brightness-50" : ""}`}
         />
       )}
       {label && (
-        <div className="absolute inset-0 flex items-end justify-center pb-2 lg:items-center lg:pb-0 opacity-100 lg:opacity-0 transition-opacity duration-300 lg:group-hover:opacity-100">
-          <span className="text-sm lg:text-lg font-medium uppercase tracking-tight text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]">
+        <div className={`absolute inset-0 flex items-center justify-center px-3 transition-opacity duration-300 ${isHovered ? "opacity-100" : "opacity-0"}`}>
+          <span className="text-xs lg:text-sm font-medium uppercase tracking-tight text-white text-center leading-snug drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]">
             {label}
           </span>
         </div>

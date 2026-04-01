@@ -18,6 +18,21 @@ export default function About() {
             15,000 at Live at Chelsea, and shows scattered across London and
             Europe.
           </p>
+
+          {/* Upcoming Events (desktop only) */}
+          <div className="hidden lg:block mt-6">
+            <h3 className="text-xl lg:text-2xl font-medium uppercase leading-[1.1] tracking-tight text-foreground">
+              Upcoming Events
+            </h3>
+            <div className="mt-2 flex flex-col gap-3 text-xs font-medium uppercase tracking-widest leading-relaxed text-foreground-secondary">
+              <a href="https://www.thebeechman.com/events/lbt25-Ahmed-Alsibai" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-foreground transition-colors">
+                17 April: Live in NYC at The Laurie Beechman Theatre with BlueShade and Ahmed Alsibai
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-foreground transition-colors">
+                18 April: WIP NYC w/ Jivan Calderone and Max Stipanovich
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* Right — Paragraph (desktop only) */}
@@ -30,10 +45,36 @@ export default function About() {
             doesn&apos;t fit anywhere else.
           </p>
         </div>
+
+        {/* Mobile-only — second paragraph */}
+        <p className="lg:hidden mt-3 text-base leading-relaxed text-foreground-secondary max-w-md">
+          Now based in Philadelphia, he splits time between BlueShade, a
+          live band playing venues across New York and Philly, and his own
+          solo work layering live guitar over electronic production. In 2024
+          he co-founded Knossos Music. The label exists for the stuff that
+          doesn&apos;t fit anywhere else.
+        </p>
+
+        {/* Upcoming Events (mobile only) */}
+        <div className="lg:hidden mt-6">
+          <h3 className="text-xl font-medium uppercase leading-[1.1] tracking-tight text-foreground">
+            Upcoming Events
+          </h3>
+          <div className="mt-2 flex flex-col gap-3 text-xs font-medium uppercase tracking-widest leading-relaxed text-foreground-secondary">
+            <a href="https://www.thebeechman.com/events/lbt25-Ahmed-Alsibai" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-foreground transition-colors">
+              17 April: Live in NYC at The Laurie Beechman Theatre with BlueShade and Ahmed Alsibai
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-foreground transition-colors">
+              18 April: WIP NYC w/ Jivan Calderone and Max Stipanovich
+            </a>
+          </div>
+        </div>
       </div>
 
       {/* Center — Image carousel */}
-      <Gallery />
+      <div className="mt-6 lg:mt-0">
+        <Gallery />
+      </div>
 
       {/* Bottom — Stats */}
       <div className="flex flex-col gap-3 mt-auto lg:mt-0 lg:flex-row lg:justify-between lg:items-end">
